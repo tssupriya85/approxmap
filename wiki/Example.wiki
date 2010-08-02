@@ -1,3 +1,4 @@
+#labels Featured
 Refer: 
 
 http://www.unc.edu/~kum/approxMAP/papers/kum_handout.pdf
