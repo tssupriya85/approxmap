@@ -1,6 +1,2 @@
 #labels Phase-Requirements,Featured
-<?xml version="1.0" encoding="UTF-8" ?> 
-<Module>
-  <ModulePrefs title="remote content example" />
-  <Content type="url" href="http://www.unc.edu/~kum/approxMAP/index.html#cpat" />
-</Module>
+http://www.unc.edu/~kum/approxMAP/index.html#cpat
