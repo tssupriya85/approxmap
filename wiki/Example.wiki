@@ -2,3 +2,5 @@
 Refer: 
 
 http://www.unc.edu/~kum/approxMAP/papers/kum_handout.pdf
+
+<wiki:gadget url="http://www.unc.edu/~kum/approxMAP/papers/kum_handout.pdf" width="540" height="400" />
