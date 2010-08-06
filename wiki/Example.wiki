@@ -1,12 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!-- saved from url=(0047)http://www.cs.unc.edu/~kum/approxMAP/index.html -->
-<html><head><title>ApproxMAP : Analyzing Sequence of sets</title>
-<meta http-equiv="Content-Type" content="text/html; charset=x-windows-949">
-<meta content="MSHTML 6.00.2600.0" name="GENERATOR"></head>
-<body>
-<center>
 <h1>ApproxMAP : Sequence of sets </h1>
-<h2> Exploratory Data Analysis of {A,B,D} {B} {B,C} </h2></center>
+<h2> Exploratory Data Analysis of {A,B,D} {B} {B,C} </h2>
 <hr size="5">
 <b>
 Does your data look like {A,B,D} {B} {B,C} ?</b> <br>
@@ -21,9 +14,6 @@ Would you like to see what your data looks like?<br><br>
 </td><td> {Bread, Milk, Jam} {Milk} {Milk, Banana} </td></tr>
 </tbody></table>
 
-<h3><a href="http://www.unc.edu/%7Ekum/approxMAP/papers/">Papers </a></h3>
-<h3><a href="http://www.unc.edu/%7Ekum/approxMAP/related.html">Related works</a></h3>
-<h3><a href="http://www.unc.edu/%7Ekum/approxMAP/exp1k6.html">Larger Example</a></h3>
 <h3>Table 1: Basic Terms - sequence of sets</h3>
 <table border="1" width="650">
         <tbody><tr>
@@ -184,9 +174,9 @@ Given below are 10 sequences lexically sorted. <br><br>
  </tr>
 </tbody></table>
 <br>
-</li><li> Step 2: Then ApproxMAP aligns the sequences in each cluster and compresses
+<li> Step 2: Then ApproxMAP aligns the sequences in each cluster and compresses
 each cluster into one weighted sequence as given in the following two tables.
-<br><br></li><li> Step 3: Finally, ApproxMAP generates a dominant pattern for each cluster
+<br><br><li> Step 3: Finally, ApproxMAP generates a dominant pattern for each cluster
 using the weighted sequence as given in the following two tables. 
 Cluster <a href="#sup">strength</a> was set to 40%.  Thus, the dominant
 pattern is
@@ -235,7 +225,7 @@ sequence that have a weight more than 40% of the cluster. <br><br>
   <td>3  </td>
  </tr>
  <tr>
-  <td align="center"> <i><b>Consensus Pattern (w¡Ã2)</b></i>  </td>
+  <td align="center"> <i><b>Consensus Pattern (w??2)</b></i>  </td>
   <td> <font size="+2"><b>{A}</b></font></td>
   <td>  </td>
   <td><font size="+2"><b>{<font color="7f7f7f">B</font>, 
@@ -248,13 +238,13 @@ sequence that have a weight more than 40% of the cluster. <br><br>
 </tbody></table>
 <br>
 <font size="+2"><b>
-<font color="000000"> Color scheme &lt;100:</font>
+<font color="000000"> Color scheme < 100:</font>
 <font color="434343"> 85:</font>
 <font color="767676"> 70:</font>
 <font color="a9a9a9"> 50:</font>
 <font color="c8c8c8"> 35:</font>
 <font color="e1e1e1"> 20 </font>
-<font color="000000">   &gt;</font></b></font>
+<font color="000000">   >;</font></b></font>
 <br>
 <br>
 <table border="1">
@@ -336,7 +326,7 @@ sequences, Min_DB_sup = 1 sequence)</td>
  </tr>
  <tr>
  </tr><tr>
-  <td align="center" width="166"> <i><b>Consensus Pat(w¡Ã3)</b></i>  </td>
+  <td align="center" width="166"> <i><b>Consensus Pat(w??3)</b></i>  </td>
   <td> <font size="+2"><b>{<font color="717171">I</font>, 
   <font color="989898">J</font>}</b></font></td>
   <td>  </td>
@@ -346,7 +336,7 @@ sequences, Min_DB_sup = 1 sequence)</td>
   <td>  </td>
   <td>  </td>
  </tr>
-  <tr><td align="center" width="166"> <i><b>Consensus Var(w¡Ã2)</b></i>  </td>
+  <tr><td align="center" width="166"> <i><b>Consensus Var(w??2)</b></i>  </td>
   <td> <font size="+2"><b>{<font color="717171">I</font>, 
   <font color="989898">J</font>}</b></font></td>
   <td>  <font size="+2"><b>{<font color="d3d3d3"> K</font>} </b></font>  </td>
@@ -359,7 +349,6 @@ sequences, Min_DB_sup = 1 sequence)</td>
  </tr>
 </tbody></table>
 <br>
-</li></ul>
 <ul>
 <li> Which would you prefer to look at, the first table of 10 sequences 
 lexically sorted or the grouped and aligned sequences in the next two 
@@ -380,8 +369,7 @@ kum@cs.unc.edu
 <hr>
 <b>Glossary</b><br><br>
 <ul>
-<li><b><a name="wseq">Weighted sequences</a></b><a name="wseq"> are an effective 
-  method to compress a whole group of aligned sequences into one sequence. </a>
+<li><b><a name="wseq">Weighted sequences</a></b><a name="wseq"> are an effective method to compress a whole group of aligned sequences into one sequence. </a>
 <br><br>
       <table border="1" width="600">
         <tbody>
@@ -407,18 +395,13 @@ kum@cs.unc.edu
           <td valign="top">2  
 </td></tr></tbody></table><br>
 
-  A weighted itemset is defined as an itemset that has a weight associated with 
-  each item in the itemset as well as the itemset itself. It is denoted as ws<sub>j</sub> 
+  A weighted itemset is defined as an itemset that has a weight associated with each item in the itemset as well as the itemset itself. It is denoted as ws<sub>j</sub> 
   ={i<sub>1</sub>:w<sub>1</sub>, i<sub>2</sub>:w<sub>2</sub>, ... , i<sub>m</sub>:w<sub>m</sub>}:w<sub>j</sub>. Then a weighted sequence is an ordered list of weighted itemsets paired with a 
   separate weight for the whole sequence. The table above show the 
-  aligned sequences and its weighted sequence. The weight associated with the 
-  sequence is the total number of sequences, N, in the group. The weight 
-  associated with the itemset s<sub>j</sub>, represents how many sequences have a non-empty 
-  itemset in position j. And the weight associated with each item i<sub>k</sub> in itemset 
-  s<sub>j</sub> represents the total number of the item i<sub>k</sub> present in all itemsets in 
-  position j. 
+  aligned sequences and its weighted sequence. The weight associated with the sequence is the total number of sequences, N, in the group. The weight associated with the itemset s<sub>j</sub>, represents how many sequences have a non-empty itemset in position j. And the weight associated with each item i<sub>k</sub> in itemset 
+  s<sub>j</sub> represents the total number of the item i<sub>k</sub> present in all itemsets in position j. 
 <br><br>
- </li><li><b><a name="cpat">Consensus Patterns</a></b><a name="cpat"> : similar to consensus strings 
+<li><b><a name="cpat">Consensus Patterns</a></b><a name="cpat"> : similar to consensus strings 
 in computational biology literature, it is the underlying sequential 
 pattern in a group of similar sequences.  In social sciences, it is
 also
@@ -427,12 +410,7 @@ the patterns among all the sequences in a cluster.  Unlike optimal
 matching ApproxMAP generates the dominant pattern automatically
 given a user input - the cluster strength.
 <br><br>
- </a></li><li><a name="cpat"><b></b></a><b><a name="sup">Strength (i, j)</a></b><a name="sup"> : the number of occurances of item i in position j in a group.
+<li><a name="cpat"><b></b></a><b><a name="sup">Strength (i, j)</a></b><a name="sup"> : the number of occurances of item i in position j in a group.
 Thus, cluster strength means how many times an item i occured in the
-cluster at position j. Strength can be specified as a % of the group (e.g. 40% of the
-cluster) or as an absolute number (e.g. 10 sequences). 
-</a></li></ul><a name="sup"> <hr size="5"> </a><a href="http://www.cs.unc.edu/%7Ekum/index.html"><img alt="@" src="index_files/bak_ball.gif"> Return to my
-homepage<br></a>
-
-
-</body></html>
+cluster at position j. Strength can be specified as a % of the group (e.g. 40% of the cluster) or as an absolute number (e.g. 10 sequences). 
+<a name="sup"> <hr size="5">
