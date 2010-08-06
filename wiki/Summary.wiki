@@ -68,8 +68,8 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td width="81"> <font color="red">{A}</font></td>
   <td width="108"> <font color="red">{B, C, Y}  </font></td>
   <td width="84"> <font color="red">{D}</font></td>
-  <td width="84"> &nbsp; </td>
-  <td width="48">  &nbsp; </td>
+  <td width="84">   </td>
+  <td width="48">    </td>
   <td align="center" width="52"> <font color="red">1  </font></td>
   <td align="center" width="52"> 3  </td>
   <td align="center" width="52">5  </td>
@@ -91,7 +91,7 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td width="108"> <font color="blue">{Z}  </font></td>
   <td width="84"> <font color="blue">{K}  </font></td>
   <td width="84"> <font color="blue">{L, M}  </font></td>
-  <td width="48">  &nbsp; </td>
+  <td width="48">    </td>
   <td align="center" width="52"> <font color="blue">2  </font></td>
   <td align="center" width="52">4  </td>
   <td align="center" width="52">6  </td>
@@ -100,9 +100,9 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td align="center" width="63">seq<sub>4</sub>  </td>
   <td width="81"> <font color="red">{A, L}</font></td>
   <td width="108"> <font color="red">{D, E}</font></td>
-  <td width="84">   &nbsp; </td>
-  <td width="84">   &nbsp; </td>
-  <td width="84">   &nbsp; </td>
+  <td width="84">     </td>
+  <td width="84">     </td>
+  <td width="84">     </td>
   <td align="center" width="52"> <font color="red">1  </font></td>
   <td align="center" width="52">2  </td>
   <td align="center" width="52">4  </td>
@@ -113,7 +113,7 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td width="108"> <font color="blue">{B}  </font></td>
   <td width="84"> <font color="blue">{K}  </font></td>
   <td width="84"> <font color="blue">{L}  </font></td>
-  <td width="48"> <font color="blue">   &nbsp; </font></td>
+  <td width="48"> <font color="blue">     </font></td>
   <td align="center" width="52"> <font color="blue">2  </font></td>
   <td align="center" width="52">4  </td>
   <td align="center" width="52">5  </td>
@@ -122,9 +122,9 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td align="center" width="63">seq<sub>6</sub>  </td>
   <td width="81"> <font color="blue">{I, J}  </font></td>
   <td width="108"> <font color="blue">{L, M}  </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
   <td align="center" width="52"> <font color="blue">2  </font></td>
   <td align="center" width="52">2  </td>
   <td align="center" width="52">5  </td>
@@ -146,7 +146,7 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td width="108"> <font color="blue">{K}  </font></td>
   <td> <font color="blue"> {K, M} </font></td>
   <td> <font color="blue"> {L, M} </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
   <td align="center" width="52"> <font color="blue">2  </font></td>
   <td align="center" width="52">4 </td>
   <td align="center" width="52">7  </td>
@@ -156,8 +156,8 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td width="81"> <font color="blue">{J}  </font></td>
   <td width="108"> <font color="blue">{K}  </font></td>
   <td> <font color="blue"> {L, M} </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
   <td align="center" width="52"> <font color="blue">2  </font></td>
   <td align="center" width="52">3 </td>
   <td align="center" width="52">4  </td>
@@ -167,8 +167,8 @@ Given below are 10 sequences lexically sorted. <br><br>
   <td width="81"> <font color="blue">{V}  </font></td>
   <td width="108"> <font color="blue">{K, W}  </font></td>
   <td> <font color="blue"> {Z} </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
   <td align="center" width="52"> <font color="blue">2  </font></td>
   <td align="center" width="52">3 </td>
   <td align="center" width="52">4  </td>
@@ -192,20 +192,20 @@ sequence that have a weight more than 40% of the cluster. <br><br>
  <tr>
   <td align="center">seq<sub>1</sub>  </td>
   <td width="81"> <font color="red">{A}</font></td>
-  <td> &nbsp; </td>
+  <td>   </td>
   <td width="108"> <font color="red">{B, C, Y}  </font></td>
   <td width="84"> <font color="red">{D}</font></td>
-  <td> &nbsp; </td>
-  <td> &nbsp; </td>
+  <td>   </td>
+  <td>   </td>
  </tr>
  <tr>
   <td align="center">seq<sub>4</sub>  </td>
   <td width="81"> <font color="red">{A, L}</font></td>
-  <td> &nbsp; </td>
-  <td> &nbsp; </td>
+  <td>   </td>
+  <td>   </td>
   <td width="108"> <font color="red">{D, E}</font></td>
-  <td> &nbsp; </td>
-  <td> &nbsp; </td>
+  <td>   </td>
+  <td>   </td>
  </tr>
  <tr>
   <td align="center">seq<sub>2</sub>  </td>
@@ -214,7 +214,7 @@ sequence that have a weight more than 40% of the cluster. <br><br>
   <td width="84"><font color="red">{B, C}  </font></td>
   <td width="84"> <font color="red">{A, E}</font></td>
   <td width="48"> <font color="red">{Z}</font></td>
-  <td> &nbsp; </td>
+  <td>   </td>
  </tr>
  <tr>
   <td align="center" width="160">Weighted sequence  </td>
@@ -256,11 +256,11 @@ sequences, Min_DB_sup = 1 sequence)</td>
  <tr>
   <td align="center">seq<sub>9</sub>  </td>
   <td width="81"> <font color="blue">{J}  </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
   <td width="108"> <font color="blue">{K}  </font></td>
   <td> <font color="blue"> {L, M} </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
  </tr>
  <tr>
   <td align="center">seq<sub>5</sub>  </td>
@@ -268,8 +268,8 @@ sequences, Min_DB_sup = 1 sequence)</td>
   <td width="108"> <font color="blue">{B}  </font></td>
   <td width="84"> <font color="blue">{K}  </font></td>
   <td width="84"> <font color="blue">{L}  </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
 </tr>
  <tr>
   <td align="center">seq<sub>3</sub>  </td>
@@ -277,8 +277,8 @@ sequences, Min_DB_sup = 1 sequence)</td>
   <td width="108"> <font color="blue">{Z}  </font></td>
   <td width="84"> <font color="blue">{K}  </font></td>
   <td width="84"> <font color="blue">{L, M}  </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
  </tr>
  <tr>
   <td align="center">seq<sub>7</sub>  </td>
@@ -287,7 +287,7 @@ sequences, Min_DB_sup = 1 sequence)</td>
   <td> <font color="blue"> {J, K} </font></td>
   <td> <font color="blue"> {L} </font></td>
   <td> <font color="blue"> {M} </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
  </tr>
  <tr>
   <td align="center">seq<sub>8</sub>  </td>
@@ -295,26 +295,26 @@ sequences, Min_DB_sup = 1 sequence)</td>
   <td width="108"> <font color="blue">{K}  </font></td>
   <td> <font color="blue"> {K, M} </font></td>
   <td> <font color="blue"> {L, M} </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
  </tr>
  <tr>
   <td align="center">seq<sub>6</sub>  </td>
   <td width="81"> <font color="blue">{I, J}  </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
   <td> <font color="blue">{L, M}  </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
+  <td> <font color="blue">     </font></td>
  </tr>
  <tr>
   <td align="center">seq<sub>10</sub>  </td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
   <td width="81"> <font color="blue">{V}  </font></td>
   <td width="108"> <font color="blue">{K, W}  </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
   <td> <font color="blue"> {Z} </font></td>
-  <td> <font color="blue">   &nbsp; </font></td>
+  <td> <font color="blue">     </font></td>
  </tr>
  <tr>
   <td align="center">Weighted seq  </td>
@@ -385,7 +385,7 @@ kum@cs.unc.edu
         <tr>
           <td align="center" valign="top">seq<sub>2 </sub></td>
           <td valign="top">{A} </td>
-          <td valign="top"> &nbsp; </td>
+          <td valign="top">   </td>
           <td valign="top">{C} </td>
           <td valign="top"></td></tr>
         <tr>
@@ -415,3 +415,4 @@ given a user input - the cluster strength.
 Thus, cluster strength means how many times an item i occured in the
 cluster at position j. Strength can be specified as a % of the group (e.g. 40% of the cluster) or as an absolute number (e.g. 10 sequences). 
 <a name="sup"> <hr size="5">
+
