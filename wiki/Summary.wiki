@@ -225,7 +225,7 @@ sequence that have a weight more than 40% of the cluster. <br><br>
   <td>3  </td>
  </tr>
  <tr>
-  <td align="center"> <i><b>Consensus Pattern (w??2)</b></i>  </td>
+  <td align="center"> <i><b>Consensus Pattern (w>=2)</b></i>  </td>
   <td> <font size="+2"><b>{A}</b></font></td>
   <td>  </td>
   <td><font size="+2"><b>{<font color="7f7f7f">B</font>, 
@@ -326,7 +326,7 @@ sequences, Min_DB_sup = 1 sequence)</td>
  </tr>
  <tr>
  </tr><tr>
-  <td align="center" width="166"> <i><b>Consensus Pat(w??3)</b></i>  </td>
+  <td align="center" width="166"> <i><b>Consensus Pat(w>=3)</b></i>  </td>
   <td> <font size="+2"><b>{<font color="717171">I</font>, 
   <font color="989898">J</font>}</b></font></td>
   <td>  </td>
@@ -336,7 +336,7 @@ sequences, Min_DB_sup = 1 sequence)</td>
   <td>  </td>
   <td>  </td>
  </tr>
-  <tr><td align="center" width="166"> <i><b>Consensus Var(w??2)</b></i>  </td>
+  <tr><td align="center" width="166"> <i><b>Consensus Var(w>=2)</b></i>  </td>
   <td> <font size="+2"><b>{<font color="717171">I</font>, 
   <font color="989898">J</font>}</b></font></td>
   <td>  <font size="+2"><b>{<font color="d3d3d3"> K</font>} </b></font>  </td>
@@ -354,11 +354,7 @@ sequences, Min_DB_sup = 1 sequence)</td>
 lexically sorted or the grouped and aligned sequences in the next two 
 tables?
 </li><li> Imagine what would happen in real applications where you have 
-many more sequences (N &gt;&gt; 100).  If you were to glance through the
- aligned sequences
-then studied the dominant patterns generated for each cluster, wouldn't 
-you
-be able to get a good understanding of what your data looked like?
+many more sequences (N >> 100).  If you were to glance through the aligned sequences then studied the dominant patterns generated for each cluster, wouldn't you be able to get a good understanding of what your data looked like?
 </li><li> If you are interested to learn more about ApproxMAP email us at 
 approxmap@unc.edu  This webpage is still under construction.
 </li><li> How can you get software that does ApproxMAP?  We have a not-so user 
