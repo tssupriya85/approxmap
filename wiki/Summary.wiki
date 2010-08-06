@@ -361,58 +361,45 @@ then studied the dominant patterns generated for each cluster, wouldn't
 you
 be able to get a good understanding of what your data looked like?
 </li><li> If you are interested to learn more about ApproxMAP email us at 
-kum@cs.unc.edu  This webpage is still under construction.
+approxmap@unc.edu  This webpage is still under construction.
 </li><li> How can you get software that does ApproxMAP?  We have a not-so user 
 friendly software.  We will consider running the analysis for you and
 we are open to discussing other possibilities. Email us at
-kum@cs.unc.edu
+approxmap@unc.edu
 </li></ul>
 <hr>
 <b>Glossary</b><br><br>
 <ul>
 <li><b><a name="wseq">Weighted sequences</a></b><a name="wseq"> are an effective method to compress a whole group of aligned sequences into one sequence. </a>
 <br><br>
-      <table border="1" width="600">
-        <tbody>
-        <tr>
-          <th colspan="5" valign="top"><b>An example of weighted sequences</b> </th></tr>
-        <tr>
-          <td align="center" valign="top" width="200">seq<sub>1</sub> </td>
-          <td valign="top" width="100">{A} </td>
-          <td valign="top" width="100">{B} </td>
-          <td valign="top" width="100">{C, D} </td>
-          <td valign="top" width="100"></td></tr>
-        <tr>
-          <td align="center" valign="top">seq<sub>2 </sub></td>
-          <td valign="top">{A} </td>
-          <td valign="top">   </td>
-          <td valign="top">{C} </td>
-          <td valign="top"></td></tr>
-        <tr>
-          <td align="center" valign="top">Weighted sequence </td>
-          <td valign="top">{A:2}:2 </td>
-          <td valign="top">{B:1}:1 </td>
-          <td valign="top">{C:2, D:1}:2 </td>
-          <td valign="top">2  
-</td></tr></tbody></table><br>
+<table border="1" width="600">
+<tbody>
+<tr>
+<th colspan="5" valign="top"><b>An example of weighted sequences</b> </th></tr>
+<tr>
+<td align="center" valign="top" width="200">seq<sub>1</sub> </td>
+<td valign="top" width="100">{A} </td>
+<td valign="top" width="100">{B} </td>
+<td valign="top" width="100">{C, D} </td>
+<td valign="top" width="100"></td></tr>
+<tr>
+<td align="center" valign="top">seq<sub>2 </sub></td>
+<td valign="top">{A} </td>
+<td valign="top">   </td>
+<td valign="top">{C} </td>
+<td valign="top"></td></tr>
+<tr>
+<td align="center" valign="top">Weighted sequence </td>
+<td valign="top">{A:2}:2 </td>
+<td valign="top">{B:1}:1 </td>
+<td valign="top">{C:2, D:1}:2 </td>
+<td valign="top">2  
+</td></tr></tbody></table>
 
-  A weighted itemset is defined as an itemset that has a weight associated with each item in the itemset as well as the itemset itself. It is denoted as ws<sub>j</sub> 
-  ={i<sub>1</sub>:w<sub>1</sub>, i<sub>2</sub>:w<sub>2</sub>, ... , i<sub>m</sub>:w<sub>m</sub>}:w<sub>j</sub>. Then a weighted sequence is an ordered list of weighted itemsets paired with a 
-  separate weight for the whole sequence. The table above show the 
-  aligned sequences and its weighted sequence. The weight associated with the sequence is the total number of sequences, N, in the group. The weight associated with the itemset s<sub>j</sub>, represents how many sequences have a non-empty itemset in position j. And the weight associated with each item i<sub>k</sub> in itemset 
-  s<sub>j</sub> represents the total number of the item i<sub>k</sub> present in all itemsets in position j. 
-<br><br>
-<li><b><a name="cpat">Consensus Patterns</a></b><a name="cpat"> : similar to consensus strings 
-in computational biology literature, it is the underlying sequential 
-pattern in a group of similar sequences.  In social sciences, it is
-also
-called the ideal sequence, a hypothetical sequence that best captures
-the patterns among all the sequences in a cluster.  Unlike optimal
-matching ApproxMAP generates the dominant pattern automatically
+<p> A weighted itemset is defined as an itemset that has a weight associated with each item in the itemset as well as the itemset itself. It is denoted as ws<sub>j</sub> ={i<sub>1</sub>:w<sub>1</sub>, i<sub>2</sub>:w<sub>2</sub>, ... , i<sub>m</sub>:w<sub>m</sub>}:w<sub>j</sub>. Then a weighted sequence is an ordered list of weighted itemsets paired with a separate weight for the whole sequence. The table above show the aligned sequences and its weighted sequence. The weight associated with the sequence is the total number of sequences, N, in the group. The weight associated with the itemset s<sub>j</sub>, represents how many sequences have a non-empty itemset in position j. And the weight associated with each item i<sub>k</sub> in itemset s<sub>j</sub> represents the total number of the item i<sub>k</sub> present in all itemsets in position j. 
+<br>
+<li><b><a name="cpat">Consensus Patterns</a></b><a name="cpat"> : similar to consensus strings in computational biology literature, it is the underlying sequential pattern in a group of similar sequences. In social sciences, it is also called the ideal sequence, a hypothetical sequence that best captures the patterns among all the sequences in a cluster.  Unlike optimal matching ApproxMAP generates the dominant pattern automatically
 given a user input - the cluster strength.
-<br><br>
-<li><a name="cpat"><b></b></a><b><a name="sup">Strength (i, j)</a></b><a name="sup"> : the number of occurances of item i in position j in a group.
-Thus, cluster strength means how many times an item i occured in the
-cluster at position j. Strength can be specified as a % of the group (e.g. 40% of the cluster) or as an absolute number (e.g. 10 sequences). 
-<a name="sup"> <hr size="5">
+<br>
+<li><a name="cpat"><b></b></a><b><a name="sup">Strength (i, j)</a></b><a name="sup"> : the number of occurances of item i in position j in a group. Thus, cluster strength means how many times an item i occured in the cluster at position j. Strength can be specified as a % of the group (e.g. 40% of the cluster) or as an absolute number (e.g. 10 sequences). <a name="sup"> <hr size="5">
 
