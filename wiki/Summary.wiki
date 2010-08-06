@@ -42,11 +42,10 @@ databases. Our goal is to assist the data analyst in exploratory data analysis
 through organization and data reduction. The method works in three steps. </p>
 <ol>
   <li>First, similar sequences are grouped together using kNN clustering. 
-  </li><li>Then we organize and compress sequences within each cluster into <i><a href="http://www.unc.edu/%7Ekum/approxMAP/index.html#wseq">weighted 
-  sequences</a></i> using multiple alignment. 
-  </li><li>In the last step, the longest <i><a href="http://www.unc.edu/%7Ekum/approxMAP/index.html#cpat">consensus pattern</a></i> best fitting each 
-  cluster are generated from the  <i><a href="http://www.unc.edu/%7Ekum/approxMAP/index.html#wseq">weighted 
-  sequences</a></i> . </li></ol>
+  </li><li>Then we organize and compress sequences within each cluster into weighted 
+  sequences using multiple alignment. 
+  </li><li>In the last step, the longest consensus pattern best fitting each 
+  cluster are generated from the weighted sequences. </li></ol>
 <p>Our extensive experimental results on synthetic and real data show that 
 ApproxMAP is very robust to noise and does well in mapping the high dimensional 
 noisy data into approximate sequential patterns. </p>
@@ -402,4 +401,3 @@ approxmap@unc.edu
 given a user input - the cluster strength.
 <br>
 <li><a name="cpat"><b></b></a><b><a name="sup">Strength (i, j)</a></b><a name="sup"> : the number of occurances of item i in position j in a group. Thus, cluster strength means how many times an item i occured in the cluster at position j. Strength can be specified as a % of the group (e.g. 40% of the cluster) or as an absolute number (e.g. 10 sequences). <a name="sup"> <hr size="5">
-
