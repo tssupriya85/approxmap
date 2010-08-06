@@ -5,4 +5,4 @@
 This software is licensed under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a> version 2.0 or later.
 <!-- /Creative Commons License -->
 
-=Copyright (C) 2010 Hye-Chung Kum=
+                   
