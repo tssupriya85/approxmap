@@ -1,5 +1,7 @@
 #labels Featured
-<HEAD><TITLE>ApproxMAP : Analyzing Sequence of sets</TITLE>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.cs.unc.edu/~kum/approxMAP/index.html -->
+<HTML><HEAD><TITLE>ApproxMAP : Analyzing Sequence of sets</TITLE>
 <META http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
 <META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
 <BODY>
@@ -499,4 +501,5 @@ cluster) or as an absolute number (e.g. 10 sequences).
 </ul> <HR SIZE=5> <A
 href="http://www.cs.unc.edu/~kum/index.html"><IMG alt=@
 src="../image/bak_ball.gif"> Return to my
-homepage<BR></A></LI></BODY>
+homepage<BR></A></LI></BODY></HTML>
+
