@@ -14,5 +14,5 @@
 ||tar czvf destination.tar.gz sourcefolder/||"Creating a tape Archive" Create tape archives and add files || tar czvf myfolder.tar.gz abcfolder/ || Creates a tape archive (zip) a folder at your current directory say "abcfolder" ||
 ||tar -zxvf source.tar.gz||"Extracting Files from tape Archive" || tar -zxvf extractme.tar.gz || Extracts files from tape archive (zip) to your current directory ||
 
-
+<hr size="5">
 Copyright (C) 2010 Hye-Chung Kum
