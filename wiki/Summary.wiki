@@ -398,4 +398,4 @@ given a user input - the cluster strength.
 <br>
 <li><a name="cpat"><b></b></a><b><a name="sup">Strength (i, j)</a></b><a name="sup"> : the number of occurances of item i in position j in a group. Thus, cluster strength means how many times an item i occured in the cluster at position j. Strength can be specified as a % of the group (e.g. 40% of the cluster) or as an absolute number (e.g. 10 sequences). <a name="sup"> <hr size="5">
 
-<b>Copyright (C) 2010 Hye-Chung Kum </b>
+*Copyright (C) 2010 Hye-Chung Kum*
