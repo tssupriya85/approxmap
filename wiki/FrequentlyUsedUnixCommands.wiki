@@ -13,6 +13,9 @@
 ||rmdir dirname||"Remove Directory." Deletes the directory (folder) dirname.||rm temp||Removes the directory called "temp."||
 ||tar czvf destination.tar.gz sourcefolder/||"Creating a tape Archive" Create tape archives and add files || tar czvf myfolder.tar.gz abcfolder/ || Creates a tape archive (zip) a folder at your current directory say "abcfolder" ||
 ||tar -zxvf source.tar.gz||"Extracting Files from tape Archive" || tar -zxvf extractme.tar.gz || Extracts files from tape archive (zip) to your current directory ||
+||diff source1 source2||"differences between the files" || diff 1.txt 2.txt || Difference between 1.txt and 2.txt. Diff change notation includes 2 numbers and a character between them. Characters tell you what kind of change was discovered: d – a line was deleted, c – a line was changed, a – a line was added ||
+
+
 
 <hr size="5">
 Copyright (C) 2010 Hye-Chung Kum
