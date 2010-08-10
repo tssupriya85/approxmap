@@ -5,7 +5,7 @@
 This example has a very small dataset and is used to explain the output
 files.  It is too small to have any meaningful results.
 
-*Step1:* Generate a data file for you sequences:
+<u> *Step1:* </u> Generate a data file for you sequences:
 
 This example is in reference to the
 [http://www.unc.edu/~kum/approxMAP/papers/kum_handout.pdf HANDOUT]
@@ -28,7 +28,7 @@ Third column represents the character number (A=1, B=2, C=3..ect)
 Write all the sequences in a single data file as shown in the tiny.data file.
 
 
-*Step2:* ../approx.exe tiny –data 2
+<u> *Step2:* </u>../approx.exe tiny –data 2
 
 As soon as you run the code, we can see the following message. Check that your sequences are being processed in the program properly by checking the first 10 sequences printed.  If it is not, check the format of your data file.
 <br>
@@ -47,7 +47,7 @@ approx.exe fn -data kNN
 
 *NOTE: You may notice that the file name has changed from “file_name” to “file_nameN0” where N is the number of clusters in kNN algorithm.*
 
-*Step3:* Open the example folder.
+<u> *Step3:* </u>Open the example folder.
 
 Once the code has run we get 3 files in the same folder namely: *.html *.prof *.cprof
 
@@ -159,7 +159,7 @@ Output: tiny20.cprof
 In this file the first line represent cluster number and size of the cluster.
 From the second line to the next cluster the lines represent the weighted sequences, each line being an weighted itemset in the consensus pattern. The first number in () is the item number, followed by the weight of the item in the pattern.  Each line as the weighted itemset in {} followed by the weight for the itemset.  Thus, below :3 at the end of line one represents the itemset weight for the consensus pattern indicating that all 3 sequences in the first cluster have an itemset aligned to this position.  Furthermore, (1:3) below represents that there are 3 A’s in the first itemset in the consensus pattern.  There is also one L (12:1) in the same itemset.
 
-*Example*
+*Example* <br>
 cluster0;Fsize=3<br>
 {(1:3),(12:1),}:3<br>
 {(24:1),}:1<br>
@@ -176,7 +176,7 @@ cluster1;Fsize=7<br>
 
 {{{*}}}.prof – the profile file give the actual alignment and sequences in each cluster
 
-*Example:*
+*Example:* <br>
 0;s=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,} ;5;10<br>
 cluster0;size=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,}<br> 
 cluster0;precent;1;{100,33,} {33,} {66,66,33,} {33,66,66,} {33,} <br>
@@ -194,18 +194,18 @@ cluster1;precent;1;{71,57,(2)} {28,(3)} {85,(3)} {85,57,} {(2)} <br>
 5;6;1;{9,10,} {} {} {12,13,} {} <br>
 9;10;1;{} {22,} {11,23,} {} {26,}<br>
 
-Line 1:
+<u>Line 1:</u>
 The first number (0) represents id of the cluster
 S=3 shows the size of cluster
 The number 1 after S=3 is a system value, you can ignore it.
 After which the weighted sequence without weights are printed.
 The last two numbers 5 and 11 represents the total number of sets and elements in the pattern.
 
-Line 2 & 3: 
+<u>Line 2 & 3: </u>
 Variation consensus sequences. 
 Line 2 is the consensus sequence, and line 3 is the weight of each item in percentage.
 
-Line 4:
+<u>Line 4:</u>
 Weights in percentages and alignment sequence for each cluster.<br>
 0;1;1;{1,} {} {2,3,25,} {4,} {}  shows that it is
 0 – Program defined sequence number (internal, can ignore)
