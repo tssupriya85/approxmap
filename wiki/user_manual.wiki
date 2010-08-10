@@ -51,9 +51,9 @@ approx.exe fn -data kNN
 
 Once the code has run we get 3 files in the same folder namely: *.html *.prof *.cprof
 
-*NOTE: *.html is the primary file giving the overview of the results.  Load this file into a browser (double click).  For more details about the results, you can open *.prof and *.cprof flies using notepad or any other editor.
+*NOTE:* {{{*}}}.html is the primary file giving the overview of the results.  Load this file into a browser (double click).  For more details about the results, you can open {{{*}}}.prof and {{{*}}}.cprof flies using notepad or any other editor.
 
-'*'.html – Displaying all the clusters using color schemes
+{{{*}}}.html – Displaying all the clusters using color schemes
 Color scheme <100: 85: 70: 50: 35: 20 > represents the weight of an item in the
 sequences in terms of percentages, where 100 represents the maximum strength and 20 the minimum.
 
@@ -75,7 +75,7 @@ TOTAL LEN= 0 To understand other files look into appendix for further details.
 
 Appendix: 
 
-*.cprof – the consensus profile file has the consensus patterns
+{{{*}}}.cprof – the consensus profile file has the consensus patterns
 
 Output: tiny20.cprof
 
@@ -97,7 +97,7 @@ cluster1;Fsize=7
 {(13:1),(26:1),}:2
 
 
-*.prof – the profile file give the actual alignment and sequences in each cluster
+{{{*}}}.prof – the profile file give the actual alignment and sequences in each cluster
 
 Example:
 0;s=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,} ;5;10
