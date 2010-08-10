@@ -12,6 +12,6 @@ See the following documents for tutorial of the method.
 
  * [http://code.google.com/p/approxmap/wiki/Install Install] <br><br>
  * [http://code.google.com/p/approxmap/wiki/user_manual User_Manual]<br><br>
- * [http://code.google.com/p/approxmap/wiki/FrequentlyUsedUnixCommands FrequentlyUsedUnixCommands]<br><br>
  * [http://code.google.com/p/approxmap/wiki/Tutorial Tutorial]<br><br>
+ * [http://code.google.com/p/approxmap/wiki/FrequentlyUsedUnixCommands FrequentlyUsedUnixCommands]<br><br>
  * [http://code.google.com/p/approxmap/wiki/License License]<br><br>
