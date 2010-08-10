@@ -1,5 +1,5 @@
 #labels Featured,Phase-Deploy
-#sidebar TOC
+#sidebar TableOfContents
 
 =Steps to install cygwin:=
 
