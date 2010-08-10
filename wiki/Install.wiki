@@ -1,4 +1,6 @@
 #labels Featured,Phase-Deploy
+#sidebar TableOfContents
+
 =Steps to install cygwin:=
 
 1. Go to the website : http://www.cygwin.com/
