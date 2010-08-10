@@ -1,4 +1,7 @@
 #labels Featured,Phase-Deploy
+#sidebar TableOfContents
+<wiki:toc max_depth="1" />
+
 =Example:=
 This example has a very small dataset and is used to explain the output
 files.  It is too small to have any meaningful results.
@@ -213,7 +216,7 @@ Weights in percentages and alignment sequence for each cluster.<br>
 1 – Frequencies of the sequence in the data set.  If you have more than one sequence that are identical, than ApproxMAP will combine them and use frequencies to keep track internally.<br>
 0;1;1;{1,} {} {2,3,25,} {4,} {} --- The aligned sequence in the clusters.  So this represents (A)(INDEL)(B,C,Y,)(D) (INDEL) below in seq1.
 The null brackets represent positions where INDEL occurred to align this sequence to the sequences in the rest of the cluster. 
-<br>
+<br><br>
 [http://www.unc.edu/~kum/approxmap/images/um_1.jpg]
 <br> 
 
