@@ -1,5 +1,5 @@
 #labels Featured,Phase-Deploy
- * [Welcome ↑ Home] 
+ * [Home ↑ Home] 
  * [Install Install]
    * [Install Steps to install cygwin]
    * [Install Compiling ApproxMAP]
