@@ -1,185 +1,143 @@
 #labels Featured,Phase-Deploy
-=Steps to install cygwin:=
+Example:
+This example has a very small dataset and is used to explain the output
+files.  It is too small to have any meaningful results.
 
-1. Go to the website : http://www.cygwin.com/
-<br><br><br>
-2. Click on the following image in the website
+Step1: Generate a data file for you sequences:
+
+This example is in reference to the handout
+[HANDOUT http://www.unc.edu/~kum/approxMAP/papers/kum_handout.pdf]
+
+The example sequence is as shown below.
 <br>
-[http://www.unc.edu/~kum/approxmap/images/i_1.jpg] 
+[http://www.unc.edu/~kum/approxmap/images/um_1.jpg]
+<br> 
+First convert the characters in the sequence to numbers (ex: A = 1, B = 2 … )
+Then the data file should be in the following format for the first sequence.
+1 1 1
+1 2 2
+1 2 3
+1 2 25
+1 3 4
+Here, First column represents the sequence number (seq1)
+Second column represents the itemset number ((A) or (B,C,Y) or (D)
+Third column represents the character number (A=1, B=2, C=3..ect)
+
+Write all the sequences in a single data file as shown in the tiny.data file.
+
+
+
+
+Step2: ../approx.exe tiny –data 2
+
+As soon as you run the code, we can see the following message. Check that your sequences are being processed in the program properly by checking the first 10 sequences printed.  If it is not, check the format of your data file.
 <br>
-and download cygwin installation file.
+[http://www.unc.edu/~kum/approxmap/images/um_1.jpg]
 <br>
+Syntax for ApproxMAP usage:
+approx.exe fn -data kNN
 
-3. Double click on setup file to install cygwin.
+Function	Explanation
+fn	represents the input file (.data format)
+-data	specify the program that the input file is of type data
+kNN	specify the number of k nearest neighbors in the clustering algorithm
+
+
+Output files:
+
+NOTE: You may notice that the file name has changed from “file_name” to “file_nameN0” where N is the number of clusters in kNN algorithm.
+
+Step3: Open the example folder.
+
+Once the code has run we get 3 files in the same folder namely: *.html *.prof *.cprof
+
+NOTE: *.html is the primary file giving the overview of the results.  Load this file into a browser (double click).  For more details about the results, you can open *.prof and *.cprof flies using notepad or any other editor.
+
+*.html – Displaying all the clusters using color schemes
+Color scheme <100: 85: 70: 50: 35: 20 > represents the weight of an item in the
+sequences in terms of percentages, where 100 represents the maximum strength and 20 the minimum.
+
+The first line says that 50% pattern consensus sequences are present and
+20% weighted sequences are present.
+In the second line cluster 0 and 1 are printed in a color scheme which
+shows weighted sequence in terms of percentages.
+
+Example:
+
+Cluster Support= 50 % : 20 % Database Support Min : Max= 10 seq: 10 % noise:type 
+cluster=0 size=3 =<100: 85: 70: 50: 35: 20> 
+PATTERN: = 0 
+{ 1 12 } { 24 } { 2 3 25 } { 1 4 5 } { 26 } 
+cluster=1 size=7 =<100: 85: 70: 50: 35: 20> 
+PATTERN: = 0 
+{ 1 9 10 13 } { 2 11 22 26 } { 10 11 13 23 } { 12 13 } { 13 26 } 
+TOTAL LEN= 0 To understand other files look into appendix for further details.
+
+Appendix: 
+
+*.cprof – the consensus profile file has the consensus patterns
+
+Output: tiny20.cprof
+
+In this file the first line represent cluster number and size of the cluster.
+From the second line to the next cluster the lines represent the weighted sequences, each line being an weighted itemset in the consensus pattern. The first number in () is the item number, followed by the weight of the item in the pattern.  Each line as the weighted itemset in {} followed by the weight for the itemset.  Thus, below :3 at the end of line one represents the itemset weight for the consensus pattern indicating that all 3 sequences in the first cluster have an itemset aligned to this position.  Furthermore, (1:3) below represents that there are 3 A’s in the first itemset in the consensus pattern.  There is also one L (12:1) in the same itemset.
+
+Example
+cluster0;Fsize=3
+{(1:3),(12:1),}:3
+{(24:1),}:1
+{(2:2),(3:2),(25:1),}:2
+{(1:1),(4:2),(5:2),}:3
+{(26:1),}:1
+cluster1;Fsize=7
+{(1:1),(9:5),(10:4),(13:1),}:6
+{(2:1),(11:2),(22:1),(26:1),}:5
+{(10:1),(11:6),(13:1),(23:1),}:6
+{(12:6),(13:4),}:6
+{(13:1),(26:1),}:2
+
+
+*.prof – the profile file give the actual alignment and sequences in each cluster
+
+Example:
+0;s=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,} ;5;10
+cluster0;size=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,} 
+cluster0;precent;1;{100,33,} {33,} {66,66,33,} {33,66,66,} {33,} 
+0;1;1;{1,} {} {2,3,25,} {4,} {} 
+1;4;1;{1,12,} {} {} {4,5,} {} 
+3;2;1;{1,} {24,} {2,3,} {1,5,} {26,} 
+1;s=7;1;{1,9,10,13,} {2,11,22,26,} {10,11,13,23,} {12,13,} {13,26,} ;5;16
+cluster1;size=7;1;{9,10,} {11,} {11,} {12,13,} {} 
+cluster1;precent;1;{71,57,(2)} {28,(3)} {85,(3)} {85,57,} {(2)} 
+8;9;1;{10,} {} {11,} {12,13,} {} 
+4;5;1;{9,10,} {2,} {11,} {12,} {} 
+2;3;1;{1,9,} {26,} {11,} {12,13,} {} 
+6;7;1;{9,10,} {11,} {10,11,} {12,} {13,} 
+7;8;1;{9,13,} {11,} {11,13,} {12,13,} {} 
+5;6;1;{9,10,} {} {} {12,13,} {} 
+9;10;1;{} {22,} {11,23,} {} {26,}
+
+Line 1:
+The first number (0) represents id of the cluster
+S=3 shows the size of cluster
+The number 1 after S=3 is a system value, you can ignore it.
+After which the weighted sequence without weights are printed.
+The last two numbers 5 and 11 represents the total number of sets and elements in the pattern.
+
+Line 2 & 3: 
+Variation consensus sequences. 
+Line 2 is the consensus sequence, and line 3 is the weight of each item in percentage.
+
+Line 4:
+Weights in percentages and alignment sequence for each cluster.
+0;1;1;{1,} {} {2,3,25,} {4,} {}  shows that it is
+0 – Program defined sequence number (internal, can ignore)
+1 – User defined sequence 1
+1 – Frequencies of the sequence in the data set.  If you have more than one sequence that are identical, than ApproxMAP will combine them and use frequencies to keep track internally.
+0;1;1;{1,} {} {2,3,25,} {4,} {} --- The aligned sequence in the clusters.  So this represents (A)(INDEL)(B,C,Y,)(D) (INDEL) below in seq1.
+The null brackets represent positions where INDEL occurred to align this sequence to the sequences in the rest of the cluster. 
 <br>
+[http://www.unc.edu/~kum/approxmap/images/um_1.jpg]
+<br> 
 
-[http://www.unc.edu/~kum/approxmap/images/i_2.jpg] 
-
-4. Click Next.
-
-<br>
-
-5. Select: Install from internet and click next
-<br>
-[http://www.unc.edu/~kum/approxmap/images/i_3.jpg] 
-
-6. Select a known location (Ex: c:\cygwin) and then click next
-<br>
-[http://www.unc.edu/~kum/approxmap/images/i_4.jpg] 
-<br>
-
-7. Click next 
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_5.jpg] 
-
-8. Click next
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_6.jpg] 
-
-9. Click next and wait
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_7.jpg] 
-<br>
-
-10. You will get the following error if it is a first time setup -> Click OK
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_8.jpg] 
-
-
-11. In the search box type GCC 
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_9.jpg] 
-
-
-12. Search GCC: 
-Click on skip once 
-Select:  GCC-core, GCC-G++ compiler
-
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_10.jpg] 
-
-Search again for “make” and click on skip once. 
-Select: make, as shown in the figure below.
-
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_11.jpg] 
-
-
-You may want to install a commonly used unix editor such as “emacs” or “vim”. So search them and install them appropriately.
-
-13. Click next this will install the package. Downloading and installation is taking place now so this step will take some time to perform. 
-
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_12.jpg] 
-
-14. After installation click finish to create a shortcut on your desktop. If you are not familiar with Unix, the basic commands you need to know for using ApproxMAP is given in the wiki section of the website. http://code.google.com/p/approxmap/
-
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_13.jpg] 
-
-Compiling the program ApproxMAP
-
-15. Double Click on cygwin icon on desktop and open cygwin. 
-
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_14.jpg] 
-
-16. Download approxmap.zip from download page.
-If you have downloaded approxmap.tar.gz to extract the files follow the instructions which are given in the bottom of this document. 
-
-17. Copy and paste approxmap.zip at C:\cygwin\home\user_name. If you want to use a different location, see instructions on setting your home directory in cygwin given in the appendix.
-
-
-18. Extract the files at the same location
-
-19. After extraction type 
-cd approxmap 
-To enter into the approxmap folder.
-
-20. Type ls to list the files in the folder
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_15.jpg] 
-
-21. Type “make approx” and press enter to compile 
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_16.jpg] 
-
-*NOTE*: You might get a few warning messages about depreciated values during compilation.  You may ignore them.
-
-22. Now approxmap has been compiled. To view the files type ls
-<br>
-
-[http://www.unc.edu/~kum/approxmap/images/i_17.jpg] 
-
-23. approx.exe is the file for execution.  If you type ./approx.exe you will get a simple syntax on how to use the program. Below are more detailed explanations.
-
-=Using ApproxMAP=
-
-24. Now to run ApproxMAP move into the directory (cd dir) which has the data you created.  We will use a tiny example file that is included in the download to demonstrate how to use ApproxMAP.  Go into the example folder, where you should have the “tiny.data” example data file. For the format of the data file, see the User Manual.  The command to type in cygwin:
-cd example
-
-25. Syntax to execute ApproxMAP
-
-../approx.exe fn -data kNN
  
-approx.exe: the executable program
-fn : the file name of your data set excluding the extension .data (fn.data)
--data : indicates the input file is of type data and is required
-kNN : specifies the number of k nearest neighbors (kNN) in the clustering algorithm
-
-So if you wanted to run the program on the sample data file tiny.data using kNN=2, then you would type if the following command.
-../approx.exe tiny -data 2
-
-*NOTE*: If you run into segmentation errors when you run the code, it is likely that you did not properly installed cygwin.  Try to reinstall cygwin (follow step 1 to 14).
-
-26. Once the code has run we get 3 files namely: 
-
-fnkNN0.html, fnkNN0.cprof, fnkNN0.prof
-	
-So in our example you would get tiny20.html, tiny20.cprof, tiny20.prof
-
-Here the file name is fn followed by the kNN in the clustering algorithm, 2 in our example, then 0 (internal book keeping), and the different extensions (html, prof, cprof).
-
-27. Load in the *.html file in our browser (double click) and you will see the number of clusters and the main patterns in each cluster. 
-
-To know about these files in more detail look at the user manual.
-
-
-
-
-
-
-
-=APPENDIX=
-
-Extracting “approxmap.tar.gz” files.
-
-28. Download the approxmap.tar.gz 
-29. Paste the downloaded file in the following location.
-	C:\cygwin\home\user_name 
-30. In cygwin type the following syntax
-tar -zxvf extractme.tar.gz
-	
-Setting your home directory to a particular location in cygwin
-Optional. Setup your home directory for cygwin so you can easily access your files from cygwin.  If this is not set, cygwin will automatically create a file C:\cygwin\home\user_name as your home directory (This plays a similar role to my Documents location in windows. It will be the default directory you start your cygwin in.) You can also set a user environment variable ‘home’ to the directory you want to use as your default data directory for cygwin. In Win XP:
-
-My Computer
-right click Properties
-Advanced tab
-Environment Variables button
-In User variables, click New button
-Variable name : HOME
-Variable value : location of the directory you want to use as home  
-For example, c:\ Documents and Settings\userid
