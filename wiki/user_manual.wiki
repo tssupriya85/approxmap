@@ -2,7 +2,7 @@ Steps to install cygwin:
 
 1. Go to the website : http://www.cygwin.com/
 
-2. Click [www.unc.edu/~kum/approxmap/images/i_1.jpg] and download cygwin installation file.
+2. Click [http://www.unc.edu/~kum/approxmap/images/i_1.jpg] and download cygwin installation file.
 
 3. Double click on setup file to install cygwin.
 
