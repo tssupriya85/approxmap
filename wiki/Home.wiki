@@ -1,3 +1,4 @@
+#labels Featured,Phase-Deploy
 Summary: 
 ApproxMAP : Approximate Sequential Pattern Mining via Mulitple Alignment
 
@@ -7,8 +8,8 @@ We present an efficient and effective algorithm, ApproxMAP (APPROXimate Multiple
 
 See the following documents for tutorial of the method.
 
-* [http://code.google.com/p/approxmap/wiki/Install Install]
-* [http://code.google.com/p/approxmap/wiki/user_manual User_Manual]
-* [http://code.google.com/p/approxmap/wiki/FrequentlyUsedUnixCommands FrequentlyUsedUnixCommands]
-* [http://code.google.com/p/approxmap/wiki/Tutorial Tutorial]
-* [http://code.google.com/p/approxmap/wiki/License License]
+* [http://code.google.com/p/approxmap/wiki/Install Install] <br>
+* [http://code.google.com/p/approxmap/wiki/user_manual User_Manual]<br>
+* [http://code.google.com/p/approxmap/wiki/FrequentlyUsedUnixCommands FrequentlyUsedUnixCommands]<br>
+* [http://code.google.com/p/approxmap/wiki/Tutorial Tutorial]<br>
+* [http://code.google.com/p/approxmap/wiki/License License]<br>
