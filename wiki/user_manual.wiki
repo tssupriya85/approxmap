@@ -64,14 +64,91 @@ shows weighted sequence in terms of percentages.
 
 *Example:*
 
-Cluster Support= 50 % : 20 % Database Support Min : Max= 10 seq: 10 % noise:type 
-cluster=0 size=3 =<100: 85: 70: 50: 35: 20> 
-PATTERN: = 0 <br>
-{ 1 12 } { 24 } { 2 3 25 } { 1 4 5 } { 26 } <br>
-cluster=1 size=7 =<100: 85: 70: 50: 35: 20> <br>
-PATTERN: = 0 <br>
-{ 1 9 10 13 } { 2 11 22 26 } { 10 11 13 23 } { 12 13 } { 13 26 } <br>
-TOTAL LEN= 0 To understand other files look into appendix for further details.
+<font color='000000'> Cluster Support= </font>
+<font color='000000'> 50</font>
+<font color='000000'> % :</font>
+<font color='000000'> 20</font>
+<font color='000000'> % Database Support Min : Max= </font>
+<font color='000000'> 10</font>
+<font color='000000'>  seq:</font>
+<font color='000000'> 10</font>
+<font color='000000'> %</font>
+<font color='000000'> noise:type</font>
+<BR>
+<font color='a9a9a9'> cluster=0 size=3</font>
+<font color='000000'>   =<100:</font>
+<font color='434343'> 85:</font>
+<font color='767676'> 70:</font>
+<font color='a9a9a9'> 50:</font>
+<font color='c8c8c8'> 35:</font>
+<font color='e1e1e1'> 20></font>
+
+<BR>
+<font color='000000'> <u><b>PATTERN:=0</b></u>
+<BR>
+<font color='000000'> {</font>
+<font color='000000'> 1</font>
+<font color='cbcbcb'> 12</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='cbcbcb'> 24</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='7f7f7f'> 2</font>
+<font color='7f7f7f'> 3</font>
+<font color='cbcbcb'> 25</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='cbcbcb'> 1</font>
+<font color='7f7f7f'> 4</font>
+<font color='7f7f7f'> 5</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='cbcbcb'> 26</font>
+<font color='000000'> }</font>
+<BR>
+<font color='a9a9a9'> cluster=1 size=7</font>
+<font color='000000'>   =<100:</font>
+<font color='434343'> 85:</font>
+<font color='767676'> 70:</font>
+<font color='a9a9a9'> 50:</font>
+<font color='c8c8c8'> 35:</font>
+<font color='e1e1e1'> 20></font>
+<BR>
+<font color='000000'> <u><b>PATTERN:=0</b></u>
+<BR>
+<font color='000000'> {</font>
+<font color='eaeaea'> 1</font>
+<font color='717171'> 9</font>
+<font color='989898'> 10</font>
+<font color='eaeaea'> 13</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='eaeaea'> 2</font>
+<font color='d3d3d3'> 11</font>
+<font color='eaeaea'> 22</font>
+<font color='eaeaea'> 26</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='eaeaea'> 10</font>
+<font color='404040'> 11</font>
+<font color='eaeaea'> 13</font>
+<font color='eaeaea'> 23</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='404040'> 12</font>
+<font color='989898'> 13</font>
+<font color='000000'> }</font>
+<font color='000000'> {</font>
+<font color='eaeaea'> 13</font>
+<font color='eaeaea'> 26</font>
+<font color='000000'> }</font>
+<BR>
+<font color='000000'> TOTAL LEN=</font>
+<font color='000000'> 0</font>
+
+
+To understand other files look into appendix for further details.
 
 = Appendix: =
 
