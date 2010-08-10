@@ -5,60 +5,62 @@ Steps to install cygwin:
 2. Click [http://www.unc.edu/~kum/approxmap/images/i_1.jpg] and download cygwin installation file.
 
 3. Double click on setup file to install cygwin.
-
+[http://www.unc.edu/~kum/approxmap/images/i_2.jpg] 
 
 
 4. Click Next.
-5. Select: Install from internet and click next
 
+5. Select: Install from internet and click next
+[http://www.unc.edu/~kum/approxmap/images/i_3.jpg] 
 
 
 6. Select a known location (Ex: c:\cygwin) and then click next 
-
+[http://www.unc.edu/~kum/approxmap/images/i_4.jpg] 
 
 7. Click next 
-
+[http://www.unc.edu/~kum/approxmap/images/i_5.jpg] 
 
 8. Click next
-
+[http://www.unc.edu/~kum/approxmap/images/i_6.jpg] 
 
 
 9. Click next and wait
-
+[http://www.unc.edu/~kum/approxmap/images/i_7.jpg] 
 10. You will get the following error if it is a first time setup -> Click OK
-
+[http://www.unc.edu/~kum/approxmap/images/i_8.jpg] 
 
 
 11. In the search box type GCC 
-
+[http://www.unc.edu/~kum/approxmap/images/i_9.jpg] 
 
 
 12. Search GCC: 
 Click on skip once 
 Select:  GCC-core, GCC-G++ compiler
 
-
+[http://www.unc.edu/~kum/approxmap/images/i_10.jpg] 
 
 Search again for “make” and click on skip once. 
 Select: make, as shown in the figure below.
 
-
+[http://www.unc.edu/~kum/approxmap/images/i_11.jpg] 
 
 
 You may want to install a commonly used unix editor such as “emacs” or “vim”. So search them and install them appropriately.
 
 13. Click next this will install the package. Downloading and installation is taking place now so this step will take some time to perform. 
 
+[http://www.unc.edu/~kum/approxmap/images/i_12.jpg] 
 
 14. After installation click finish to create a shortcut on your desktop. If you are not familiar with Unix, the basic commands you need to know for using ApproxMAP is given in the wiki section of the website. http://code.google.com/p/approxmap/
 
-
+[http://www.unc.edu/~kum/approxmap/images/i_13.jpg] 
 
 Compiling the program ApproxMAP
 
 15. Double Click on cygwin icon on desktop and open cygwin. 
 
-
+[http://www.unc.edu/~kum/approxmap/images/i_14.jpg] 
 16. Download approxmap.zip from download page.
 If you have downloaded approxmap.tar.gz to extract the files follow the instructions which are given in the bottom of this document. 
 
@@ -72,35 +74,19 @@ cd approxmap
 To enter into the approxmap folder.
 
 20. Type ls to list the files in the folder
-
+[http://www.unc.edu/~kum/approxmap/images/i_15.jpg] 
 
 21. Type “make approx” and press enter to compile 
-
+[http://www.unc.edu/~kum/approxmap/images/i_16.jpg] 
 
 NOTE: You might get a few warning messages about depreciated values during compilation.  You may ignore them.
 
 22. Now approxmap has been compiled. To view the files type ls
-
+[http://www.unc.edu/~kum/approxmap/images/i_17.jpg] 
 
 23. approx.exe is the file for execution.  If you type ./approx.exe you will get a simple syntax on how to use the program. Below are more detailed explanations.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Using ApproxMAP
+*Using ApproxMAP*
 
 24. Now to run ApproxMAP move into the directory (cd dir) which has the data you created.  We will use a tiny example file that is included in the download to demonstrate how to use ApproxMAP.  Go into the example folder, where you should have the “tiny.data” example data file. For the format of the data file, see the User Manual.  The command to type in cygwin:
 cd example
@@ -137,7 +123,7 @@ To know about these files in more detail look at the user manual.
 
 
 
-APPENDIX
+=APPENDIX=
 
 Extracting “approxmap.tar.gz” files.
 
