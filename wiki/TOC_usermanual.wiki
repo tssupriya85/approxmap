@@ -1,3 +1,0 @@
-* [Welcome ↑ Home]
-  * [user_manual Example]
-  * [user_manual Appendix]
