@@ -1,5 +1,5 @@
 #labels Featured,Phase-Deploy
-#sidebar TableOfContents
+#sidebar TOC_usermanual
 <wiki:toc max_depth="1" />
 
 =Example:=
@@ -27,8 +27,6 @@ Second column represents the itemset number ((A) or (B,C,Y) or (D)
 Third column represents the character number (A=1, B=2, C=3..ect)
 
 Write all the sequences in a single data file as shown in the tiny.data file.
-
-
 
 
 *Step2:* ../approx.exe tiny –data 2
