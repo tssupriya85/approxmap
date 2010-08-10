@@ -1,4 +1,6 @@
 #labels Featured,Phase-Requirements
+#sidebar TableOfContents
+
 <h1>ApproxMAP : Sequence of sets </h1>
 <h2> Exploratory Data Analysis of {A,B,D} {B} {B,C} </h2>
 <hr size="5">
