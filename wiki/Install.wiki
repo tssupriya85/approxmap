@@ -167,6 +167,7 @@ To know about these files in more detail look at the user manual.
 Extracting “approxmap.tar.gz” files.
 
 28. Download the approxmap.tar.gz 
+<br>
 29. Paste the downloaded file in the following location.
 	C:\cygwin\home\user_name 
 30. In cygwin type the following syntax
