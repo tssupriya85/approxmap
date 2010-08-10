@@ -62,18 +62,18 @@ The first line says that 50% pattern consensus sequences are present and
 In the second line cluster 0 and 1 are printed in a color scheme which
 shows weighted sequence in terms of percentages.
 
-Example:
+*Example:*
 
 Cluster Support= 50 % : 20 % Database Support Min : Max= 10 seq: 10 % noise:type 
 cluster=0 size=3 =<100: 85: 70: 50: 35: 20> 
-PATTERN: = 0 
-{ 1 12 } { 24 } { 2 3 25 } { 1 4 5 } { 26 } 
-cluster=1 size=7 =<100: 85: 70: 50: 35: 20> 
-PATTERN: = 0 
-{ 1 9 10 13 } { 2 11 22 26 } { 10 11 13 23 } { 12 13 } { 13 26 } 
+PATTERN: = 0 <br>
+{ 1 12 } { 24 } { 2 3 25 } { 1 4 5 } { 26 } <br>
+cluster=1 size=7 =<100: 85: 70: 50: 35: 20> <br>
+PATTERN: = 0 <br>
+{ 1 9 10 13 } { 2 11 22 26 } { 10 11 13 23 } { 12 13 } { 13 26 } <br>
 TOTAL LEN= 0 To understand other files look into appendix for further details.
 
-Appendix: 
+= Appendix: =
 
 {{{*}}}.cprof – the consensus profile file has the consensus patterns
 
@@ -82,40 +82,40 @@ Output: tiny20.cprof
 In this file the first line represent cluster number and size of the cluster.
 From the second line to the next cluster the lines represent the weighted sequences, each line being an weighted itemset in the consensus pattern. The first number in () is the item number, followed by the weight of the item in the pattern.  Each line as the weighted itemset in {} followed by the weight for the itemset.  Thus, below :3 at the end of line one represents the itemset weight for the consensus pattern indicating that all 3 sequences in the first cluster have an itemset aligned to this position.  Furthermore, (1:3) below represents that there are 3 A’s in the first itemset in the consensus pattern.  There is also one L (12:1) in the same itemset.
 
-Example
-cluster0;Fsize=3
-{(1:3),(12:1),}:3
-{(24:1),}:1
-{(2:2),(3:2),(25:1),}:2
-{(1:1),(4:2),(5:2),}:3
-{(26:1),}:1
-cluster1;Fsize=7
-{(1:1),(9:5),(10:4),(13:1),}:6
-{(2:1),(11:2),(22:1),(26:1),}:5
-{(10:1),(11:6),(13:1),(23:1),}:6
-{(12:6),(13:4),}:6
-{(13:1),(26:1),}:2
+*Example*
+cluster0;Fsize=3<br>
+{(1:3),(12:1),}:3<br>
+{(24:1),}:1<br>
+{(2:2),(3:2),(25:1),}:2<br>
+{(1:1),(4:2),(5:2),}:3<br>
+{(26:1),}:1<br>
+cluster1;Fsize=7<br>
+{(1:1),(9:5),(10:4),(13:1),}:6<br>
+{(2:1),(11:2),(22:1),(26:1),}:5<br>
+{(10:1),(11:6),(13:1),(23:1),}:6<br>
+{(12:6),(13:4),}:6<br>
+{(13:1),(26:1),}:2<br>
 
 
 {{{*}}}.prof – the profile file give the actual alignment and sequences in each cluster
 
-Example:
-0;s=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,} ;5;10
-cluster0;size=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,} 
-cluster0;precent;1;{100,33,} {33,} {66,66,33,} {33,66,66,} {33,} 
-0;1;1;{1,} {} {2,3,25,} {4,} {} 
-1;4;1;{1,12,} {} {} {4,5,} {} 
-3;2;1;{1,} {24,} {2,3,} {1,5,} {26,} 
-1;s=7;1;{1,9,10,13,} {2,11,22,26,} {10,11,13,23,} {12,13,} {13,26,} ;5;16
-cluster1;size=7;1;{9,10,} {11,} {11,} {12,13,} {} 
-cluster1;precent;1;{71,57,(2)} {28,(3)} {85,(3)} {85,57,} {(2)} 
-8;9;1;{10,} {} {11,} {12,13,} {} 
-4;5;1;{9,10,} {2,} {11,} {12,} {} 
-2;3;1;{1,9,} {26,} {11,} {12,13,} {} 
-6;7;1;{9,10,} {11,} {10,11,} {12,} {13,} 
-7;8;1;{9,13,} {11,} {11,13,} {12,13,} {} 
-5;6;1;{9,10,} {} {} {12,13,} {} 
-9;10;1;{} {22,} {11,23,} {} {26,}
+*Example:*
+0;s=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,} ;5;10<br>
+cluster0;size=3;1;{1,12,} {24,} {2,3,25,} {1,4,5,} {26,}<br> 
+cluster0;precent;1;{100,33,} {33,} {66,66,33,} {33,66,66,} {33,} <br>
+0;1;1;{1,} {} {2,3,25,} {4,} {} <br>
+1;4;1;{1,12,} {} {} {4,5,} {} <br>
+3;2;1;{1,} {24,} {2,3,} {1,5,} {26,} <br>
+1;s=7;1;{1,9,10,13,} {2,11,22,26,} {10,11,13,23,} {12,13,} {13,26,} ;5;16<br>
+cluster1;size=7;1;{9,10,} {11,} {11,} {12,13,} {} <br>
+cluster1;precent;1;{71,57,(2)} {28,(3)} {85,(3)} {85,57,} {(2)} <br>
+8;9;1;{10,} {} {11,} {12,13,} {} <br>
+4;5;1;{9,10,} {2,} {11,} {12,} {} <br>
+2;3;1;{1,9,} {26,} {11,} {12,13,} {} <br>
+6;7;1;{9,10,} {11,} {10,11,} {12,} {13,} <br>
+7;8;1;{9,13,} {11,} {11,13,} {12,13,} {} <br>
+5;6;1;{9,10,} {} {} {12,13,} {} <br>
+9;10;1;{} {22,} {11,23,} {} {26,}<br>
 
 Line 1:
 The first number (0) represents id of the cluster
@@ -129,11 +129,11 @@ Variation consensus sequences.
 Line 2 is the consensus sequence, and line 3 is the weight of each item in percentage.
 
 Line 4:
-Weights in percentages and alignment sequence for each cluster.
+Weights in percentages and alignment sequence for each cluster.<br>
 0;1;1;{1,} {} {2,3,25,} {4,} {}  shows that it is
 0 – Program defined sequence number (internal, can ignore)
 1 – User defined sequence 1
-1 – Frequencies of the sequence in the data set.  If you have more than one sequence that are identical, than ApproxMAP will combine them and use frequencies to keep track internally.
+1 – Frequencies of the sequence in the data set.  If you have more than one sequence that are identical, than ApproxMAP will combine them and use frequencies to keep track internally.<br>
 0;1;1;{1,} {} {2,3,25,} {4,} {} --- The aligned sequence in the clusters.  So this represents (A)(INDEL)(B,C,Y,)(D) (INDEL) below in seq1.
 The null brackets represent positions where INDEL occurred to align this sequence to the sequences in the rest of the cluster. 
 <br>
