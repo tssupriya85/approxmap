@@ -88,7 +88,7 @@ You may want to install a commonly used unix editor such as “emacs” or “vi
 
 [http://www.unc.edu/~kum/approxmap/images/i_13.jpg] 
 
-Compiling the program ApproxMAP
+=Compiling the program ApproxMAP=
 
 15. Double Click on cygwin icon on desktop and open cygwin. 
 
@@ -157,10 +157,6 @@ Here the file name is fn followed by the kNN in the clustering algorithm, 2 in o
 27. Load in the *.html file in our browser (double click) and you will see the number of clusters and the main patterns in each cluster. 
 
 To know about these files in more detail look at the user manual.
-
-
-
-
 
 
 
