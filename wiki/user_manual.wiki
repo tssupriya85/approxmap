@@ -1,0 +1,160 @@
+Steps to install cygwin:
+
+1. Go to the website : http://www.cygwin.com/
+
+2. Click [www.unc.edu/~kum/approxmap/images/i_1.jpg] and download cygwin installation file.
+
+3. Double click on setup file to install cygwin.
+
+
+
+4. Click Next.
+5. Select: Install from internet and click next
+
+
+
+6. Select a known location (Ex: c:\cygwin) and then click next 
+
+
+7. Click next 
+
+
+8. Click next
+
+
+
+9. Click next and wait
+
+10. You will get the following error if it is a first time setup -> Click OK
+
+
+
+11. In the search box type GCC 
+
+
+
+12. Search GCC: 
+Click on skip once 
+Select:  GCC-core, GCC-G++ compiler
+
+
+
+Search again for “make” and click on skip once. 
+Select: make, as shown in the figure below.
+
+
+
+
+You may want to install a commonly used unix editor such as “emacs” or “vim”. So search them and install them appropriately.
+
+13. Click next this will install the package. Downloading and installation is taking place now so this step will take some time to perform. 
+
+
+14. After installation click finish to create a shortcut on your desktop. If you are not familiar with Unix, the basic commands you need to know for using ApproxMAP is given in the wiki section of the website. http://code.google.com/p/approxmap/
+
+
+
+Compiling the program ApproxMAP
+
+15. Double Click on cygwin icon on desktop and open cygwin. 
+
+
+16. Download approxmap.zip from download page.
+If you have downloaded approxmap.tar.gz to extract the files follow the instructions which are given in the bottom of this document. 
+
+17. Copy and paste approxmap.zip at C:\cygwin\home\user_name. If you want to use a different location, see instructions on setting your home directory in cygwin given in the appendix.
+
+
+18. Extract the files at the same location
+
+19. After extraction type 
+cd approxmap 
+To enter into the approxmap folder.
+
+20. Type ls to list the files in the folder
+
+
+21. Type “make approx” and press enter to compile 
+
+
+NOTE: You might get a few warning messages about depreciated values during compilation.  You may ignore them.
+
+22. Now approxmap has been compiled. To view the files type ls
+
+
+23. approx.exe is the file for execution.  If you type ./approx.exe you will get a simple syntax on how to use the program. Below are more detailed explanations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using ApproxMAP
+
+24. Now to run ApproxMAP move into the directory (cd dir) which has the data you created.  We will use a tiny example file that is included in the download to demonstrate how to use ApproxMAP.  Go into the example folder, where you should have the “tiny.data” example data file. For the format of the data file, see the User Manual.  The command to type in cygwin:
+cd example
+
+25. Syntax to execute ApproxMAP
+
+../approx.exe fn -data kNN
+ 
+approx.exe: the executable program
+fn : the file name of your data set excluding the extension .data (fn.data)
+-data : indicates the input file is of type data and is required
+kNN : specifies the number of k nearest neighbors (kNN) in the clustering algorithm
+
+So if you wanted to run the program on the sample data file tiny.data using kNN=2, then you would type if the following command.
+../approx.exe tiny -data 2
+
+NOTE: If you run into segmentation errors when you run the code, it is likely that you did not properly installed cygwin.  Try to reinstall cygwin (follow step 1 to 14).
+
+26.	Once the code has run we get 3 files namely: 
+
+fnkNN0.html, fnkNN0.cprof, fnkNN0.prof
+	
+So in our example you would get tiny20.html, tiny20.cprof, tiny20.prof
+
+Here the file name is fn followed by the kNN in the clustering algorithm, 2 in our example, then 0 (internal book keeping), and the different extensions (html, prof, cprof).
+
+      27. Load in the *.html file in our browser (double click) and you will see the number of clusters and the main patterns in each cluster. 
+
+To know about these files in more detail look at the user manual.
+
+
+
+
+
+
+
+APPENDIX
+
+Extracting “approxmap.tar.gz” files.
+
+28. Download the approxmap.tar.gz 
+29. Paste the downloaded file in the following location.
+	C:\cygwin\home\user_name 
+30. In cygwin type the following syntax
+tar -zxvf extractme.tar.gz
+	
+Setting your home directory to a particular location in cygwin
+Optional. Setup your home directory for cygwin so you can easily access your files from cygwin.  If this is not set, cygwin will automatically create a file C:\cygwin\home\user_name as your home directory (This plays a similar role to my Documents location in windows. It will be the default directory you start your cygwin in.) You can also set a user environment variable ‘home’ to the directory you want to use as your default data directory for cygwin. In Win XP:
+
+My Computer
+right click Properties
+Advanced tab
+Environment Variables button
+In User variables, click New button
+Variable name : HOME
+Variable value : location of the directory you want to use as home  
+For example, c:\ Documents and Settings\userid
