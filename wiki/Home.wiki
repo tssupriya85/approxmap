@@ -1,4 +1,6 @@
 #labels Featured,Phase-Deploy
+#sidebar TableOfContents
+
 Summary: 
 ApproxMAP : Approximate Sequential Pattern Mining via Mulitple Alignment
 
