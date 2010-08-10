@@ -1,9 +1,9 @@
 #labels Featured,Phase-Deploy
-Example:
+=Example:=
 This example has a very small dataset and is used to explain the output
 files.  It is too small to have any meaningful results.
 
-*Step1:* Generate a data file for you sequences:
+Step1: Generate a data file for you sequences:
 
 This example is in reference to the
 [http://www.unc.edu/~kum/approxMAP/papers/kum_handout.pdf HANDOUT]
