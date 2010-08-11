@@ -15,3 +15,7 @@ See the following documents for tutorial of the method.
  * [http://code.google.com/p/approxmap/wiki/Tutorial Tutorial]<br><br>
  * [http://code.google.com/p/approxmap/wiki/FrequentlyUsedUnixCommands FrequentlyUsedUnixCommands]<br><br>
  * [http://code.google.com/p/approxmap/wiki/License License]<br><br>
+
+<hr size="5">
+
+*Copyright (C) 2010 Hye-Chung Kum*
