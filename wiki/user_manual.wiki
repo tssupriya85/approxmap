@@ -215,9 +215,6 @@ Weights in percentages and alignment sequence for each cluster.<br>
 The null brackets represent positions where INDEL occurred to align this sequence to the sequences in the rest of the cluster. 
 <br><br>
 [http://www.unc.edu/~kum/approxmap/images/um_1.jpg]
- <a name="sup"> <hr size="5">
+<hr size="5">
 
 *Copyright (C) 2010 Hye-Chung Kum*
-<br> 
-
- 
