@@ -17,6 +17,9 @@
 ||tar -zxvf source.tar.gz||"Extracting Files from tape Archive" || tar -zxvf extractme.tar.gz || Extracts files from tape archive (zip) to your current directory ||
 ||diff source1 source2||"differences between the files" || diff 1.txt 2.txt || Difference between 1.txt and 2.txt. Diff change notation includes 2 numbers and a character between them. Characters tell you what kind of change was discovered: d – a line was deleted, c – a line was changed, a – a line was added, Number to the left of the character gives you the line number in the original (first) file, and the number to the right of the character tells you the line number in the second file used in comparison. ||
 
+<hr size="5">
+
+*Copyright (C) 2010 Hye-Chung Kum*
 
 
 <hr size="5">
