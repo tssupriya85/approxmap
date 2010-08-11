@@ -182,3 +182,7 @@ In User variables, click New button
 Variable name : HOME
 Variable value : location of the directory you want to use as home  
 For example, c:\ Documents and Settings\userid
+
+<hr size="5">
+
+*Copyright (C) 2010 Hye-Chung Kum*
